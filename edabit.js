@@ -36,3 +36,12 @@ function isSameNum(num1, num2) {
 
 // <==========================          fifth problem          ==========================>
 
+//Create a function that takes a number as an argument,
+//	increments the number by +1 and returns the result.
+function addition(num) {
+    num++
+    return num
+}
+
+// <==========================          fifth problem          ==========================>
+

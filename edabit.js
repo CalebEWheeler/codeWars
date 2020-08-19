@@ -15,3 +15,12 @@ function findPerimeter(length, width) {
 }
 
 // <==========================          third problem          ==========================>
+
+//In this challenge, you must verify the equality of
+//two different given parameters: a and b.
+function checkEquality(a, b) {
+    return a === b
+}
+
+// <==========================          third problem          ==========================>
+

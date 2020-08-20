@@ -66,3 +66,29 @@ function animals(chickens, cows, pigs) {
 
 // <==========================          seventh problem          ==========================>
 
+//The && operator will only return true for true && true.
+//Make a function using the && operator.
+function and(a, b) {
+    return a && b
+}
+
+// <==========================          eigth problem          ==========================>
+//Create a function that takes the number of wins, draws and losses
+//and calculates the number of points a football team has obtained so far.
+//wins get 3 points
+//draws get 1 point
+//losses get 0 points
+function footballPoints(wins, draws, losses) {
+    return ((wins*3)+(draws*1)+(losses*0))
+}
+
+// <==========================          ninth problem          ==========================>
+
+
+// <==========================          tenth problem          ==========================>
+
+
+// <==========================          eleventh problem          ==========================>
+
+
+// <==========================         twelfth problem          ==========================>

@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+}
+h1, p{
+    text-align: center;
+}
+#divText {
+    border: 3px solid black;
+}
+.whack-a-mole {
+    margin-top: 1em;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.firstRow, .secondRow, .thirdRow {
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerBox {
+    border: 1px solid black;
+    background-color: white;
+    height: 15rem;
+    width:100%;
+}
+/*.red {*/
+/*    background-color: red;*/
+/*}*/
+/*.blue {*/
+/*    background-color: blue;*/
+/*}*/
+/*.green {*/
+/*    background-color: green;*/
+/*}*/

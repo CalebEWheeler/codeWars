@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+<!--    <link rel="stylesheet" href="style.css">-->
+    <style>
+        input, button {
+            padding: 7px;
+            height: 40px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>Insert Data</legend>
+    <label for="inpKey"></label><input id="inpKey" type="text" placeholder="Enter Key...">
+    <label for="inpValue"></label><input id="inpValue" type="text" placeholder="Enter Value...">
+    <button type="button" id="btnInsert">Insert Data</button>
+</fieldset>
+<fieldset>
+    <legend>Local Storage</legend>
+    <div id="lsOutput"></div>
+</fieldset>
+
+<script type="text/javascript">
+    const inpKey = document.getElementById('inpKey');
+    const inpValue = document.getElementById('inpValue');
+    const  btnInsert = document.getElementById('btnInsert');
+    const lsOutput = document.getElementById('lsOutput');
+    // First built a function that will store the key and value pair on the click of the insert
+    //  data button
+
+    //Then checked if the key value pair was stored to the const by logging to console
+
+    //Ran an if statement with the boolean condition to check if(true) there is an input made
+
+    //Built a for loop to loop through the key value pairs and store them by index
+    //      to the const key and then store the const key in the const value that retrieves the
+    //      value of const key
+
+    //Finally, on line 70, added to the div with an id of lsOutput the key value pair entered in localStorage
+    btnInsert.onclick = function () {
+        const key = inpKey.value;
+        const value = inpValue.value;
+
+        // check in the console that key and value are being stored
+        // console.log(key);
+        // console.log(value);
+
+        //check to see if there is an input
+        if (key && value) {
+            //set a key value pair in localStorage
+            localStorage.setItem(key, value);
+            // refresh the page
+            location.reload();
+        }
+    }
+    // loop through key value pairs and put them in the div with an id of lsOutput
+    for (let i=0;i<localStorage.length; i++) {
+        // to get the key
+        const key = localStorage.key(i);
+        //to get the value
+        const value =  localStorage.getItem(key);
+
+        // adding to div with id of lsOutput
+        lsOutput.innerHTML += `${key}: ${value}<br />`
+    }
+</script>
+
+
+<!--more script to run basic localStorage methods that can be useful-->
+
+<!--<script>-->
+<!--   // window.localStorage targets the object window-->
+<!--   // localStorage gives us a storage object-->
+
+<!--   // localStorage.removeItem('addedCoffee')-->
+<!--   // console.log(localStorage)-->
+
+<!--   // add and remove key:value-->
+<!--   // localStorage.setItem('name', 'Caleb');-->
+<!--   // console.log(localStorage)-->
+<!--   // localStorage.removeItem('name')-->
+<!--   // console.log(localStorage)-->
+
+<!--   // how to return the value of a key-->
+<!--   // localStorage.setItem('name', 'Caleb')-->
+<!--   // localStorage.setItem('age', 25)-->
+<!--   // console.log(localStorage.getItem('name'))-->
+
+<!--   //check to see what is in localStorage-->
+<!--   // console.log(localStorage)-->
+
+<!--   // how to access a key by a specific index-->
+<!--   // console.log(localStorage.key(0))-->
+
+<!--</script>-->
+</body>
+</html>

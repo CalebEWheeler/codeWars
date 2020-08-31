@@ -12,27 +12,19 @@ h1, p{
     border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    height: 100vh;
+    width: auto;
 }
-.firstRow, .secondRow, .thirdRow {
+.row {
     margin: auto;
 
     display: flex;
     justify-content: space-between;
 }
-
 .innerBox {
     border: 1px solid black;
     background-color: white;
-    height: 15rem;
-    width:100%;
+    width:33.33vw;
+    height:33.33vw;
 }
-/*.red {*/
-/*    background-color: red;*/
-/*}*/
-/*.blue {*/
-/*    background-color: blue;*/
-/*}*/
-/*.green {*/
-/*    background-color: green;*/
-/*}*/
+

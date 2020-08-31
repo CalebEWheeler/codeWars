@@ -103,6 +103,7 @@ function nextEdge(side1, side2) {
 //Write a function that searches an array of names (unsorted) for the name
 //"Bob" and returns the location in the array. If Bob is not in the array,
 //return -1.
+var names = ['Chris', 'James', 'Bob', 'Geoffrey'];
 
 
 // <==========================         twelfth problem          ==========================>
@@ -110,4 +111,20 @@ function nextEdge(side1, side2) {
 //string and returns it as an integer.
 function stringInt(str) {
     return parseInt(str);
+}
+
+// <==========================         twelfth problem          ==========================>
+//Create a function that takes two strings as arguments
+//and returns the number of times the first string
+//(the single character) is found in the second string.
+//Create a function that takes two strings as arguments
+//and returns the number of times the first string
+//(the single character) is found in the second string.
+function charCount(myChar, str) {
+    var counter = 0
+    for(var i=0; i<str.length; i++)
+        if (str.charAt(i) === myChar) {
+            counter++
+        }
+    return counter;
 }

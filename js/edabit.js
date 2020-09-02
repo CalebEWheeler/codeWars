@@ -138,3 +138,25 @@ function charCount(myChar, str) {
 function remainder(x, y) {
     return x%y;
 }
+
+//prac test functions
+// function remove9s(num) {
+//     for (var i = 0; i < num.length; i++) {
+//         if (num.includes(9)) {
+//             var index = num.indexOf(9)
+//             num.splice(index, 1)
+//             return i;
+//         } else {
+//             return num;
+//         }
+//     }
+// }
+// console.log(remove9s([7, 8, 9, 10]))
+
+// function capitalizeName(firstName, lastName) {
+//     // var firstLetter = firstName.charAt(0);
+//     var fullName = '';
+//     return ((firstName.charAt(0).toUpperCase() + firstName.slice(1))+ '' )
+//         // + (lastName.charAt(0).toUpperCase() + slice(1)))
+// }
+// console.log(capitalizeName('ron weasley'))

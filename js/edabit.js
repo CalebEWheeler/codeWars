@@ -160,3 +160,14 @@ function remainder(x, y) {
 //         // + (lastName.charAt(0).toUpperCase() + slice(1)))
 // }
 // console.log(capitalizeName('ron weasley'))
+
+function average(arr) {
+    var total = 0;
+    for (var i=0; i<arr.length; i++) {
+        total += arr[i];
+    }
+    var avg = total/arr.length
+    return avg
+
+}
+console.log(average([1,2,3]))

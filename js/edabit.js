@@ -135,9 +135,9 @@ function charCount(myChar, str) {
 //Two numbers are passed as parameters.
 //The first parameter divided by the second parameter
 //will have a remainder, possibly zero. Return that value.
-function remainder(x, y) {
-    return x%y;
-}
+// function remainder(x, y) {
+//     return x%y;
+// }
 
 //prac test functions
 // function remove9s(num) {
@@ -161,13 +161,43 @@ function remainder(x, y) {
 // }
 // console.log(capitalizeName('ron weasley'))
 
-function average(arr) {
-    var total = 0;
-    for (var i=0; i<arr.length; i++) {
-        total += arr[i];
-    }
-    var avg = total/arr.length
-    return avg
+// function average(arr) {
+//     var total = 0;
+//     for (var i=0; i<arr.length; i++) {
+//         total += arr[i];
+//     }
+//     var avg = total/arr.length
+//     return avg
+//
+// }
+// console.log(average([1,2,3]))
 
+// Write a function to take in an integer and write the factors of that integer to the webpage.
+//Roberto's Solution
+let getFactors = function (input) {
+    let answerArray = [];
+    for (let i = 1; i <= input; i++) {
+        if (input % i === 0) {
+            answerArray.push(i);
+        }
+    }
+    return answerArray.join("<br>");
 }
-console.log(average([1,2,3]))
+//Mike T's Solution
+function factors(arr){
+    var theFactors = [];
+    if (Array.isArray(arr)){
+        for (var i = 0; i < arr.length; i++){
+            if (Number.isInteger(arr[i])){
+                for (var n = 1; n <= arr[i]; n++){
+                    if (arr[i] % n === 0){
+                        theFactors.unshift(n);
+                        // continue
+                    }
+                }
+            }
+        }
+    }
+    console.log(theFactors);
+}
+factors([10,9,100]);

@@ -6,9 +6,24 @@
 
 </head>
 <body>
-                        <!--LINK TO ASSESSMENT-->
+<p>Hi</p>                       <!--LINK TO ASSESSMENT-->
 <!--https://github.com/CodeupClassroom/io-javascript-assessment-iii-->
 <!--<script src="assessment3/testAssessmentiii.js"></script>-->
-                        <script src="js/edabit.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<!--                        <script src="js/edabit.js"></script>-->
+<script>
+    var code = [];
+    $(document).keyup(function (event) {
+
+        code.push(event.keyCode)
+        console.log(code)
+
+    })
+    var codeString = code.join(" ")
+    $('p').html(codeString)
+
+
+</script>
 </body>
 </html>

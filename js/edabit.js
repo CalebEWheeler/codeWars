@@ -139,6 +139,17 @@ function charCount(myChar, str) {
 //     return x%y;
 // }
 
+// <==========================         fourteenth problem          ==========================>
+
+
+//Write a function that takes two integers (hours, minutes),
+//	converts them to seconds, and adds them.
+function convert(hours, minutes) {
+    var hoursToSeconds = 60*(hours*60);
+    var minutesToSeconds = minutes*60;
+    return hoursToSeconds + minutesToSeconds
+}
+
 //prac test functions
 // function remove9s(num) {
 //     for (var i = 0; i < num.length; i++) {

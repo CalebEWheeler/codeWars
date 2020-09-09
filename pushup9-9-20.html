@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        button {
+            border: 1px solid black;
+        }
+        input {
+            margin-top: 10px;
+            border: 1px solid black;
+        }
+        div {
+            margin-top: 5px;
+            width: 140px;
+            height: 75px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<input id="input" type="text">
+<button id="button" type="submit">Click Me!</button>
+<div id="output"></div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $('button').click(function(){
+            $('#output').html(
+                $('input').val())
+        })
+    });
+</script>
+</body>
+</html>

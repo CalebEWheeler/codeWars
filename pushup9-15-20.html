@@ -5,12 +5,33 @@
     <title>9-15-20 Pushup</title>
 </head>
 <body>
-<h1 id="output"></h1>
+<h1>Morning Pushups</h1>
+<h4>FizzBuzz</h4>
+<input id="input" type="text">
+<button id="button">FizzBuzz</button>
+<p id="output"></p>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
    $(document).ready(function() {
-       $('#output').text('FizzBuzz')
+       $('#button').click(function() {
+           var num = $('#input').val();
+
+           for(var i=0; i<= num; i++) {
+               if(i % 15 === 0) {
+                   $('#output').append("FizzBuzz<br>")
+               }
+               else if(i % 3 === 0) {
+                   $('#output').append("Buzz<br>")
+               }
+               else if(i % 5 === 0) {
+                   $('#output').append("Fizz<br>")
+               }
+               else {
+                   $('#output').append(i + '<br>')
+               }
+           }
+       })
    })
 </script>
 </body>
